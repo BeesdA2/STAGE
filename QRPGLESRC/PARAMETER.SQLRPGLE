@@ -80,9 +80,12 @@ dcl-proc filgrid;
 
 end-proc;
 
+//// hAMSTER 
+dcl-proc hamster;
 
+end-proc;
 
-
+//helloo
 
 /// context menu opties
 
