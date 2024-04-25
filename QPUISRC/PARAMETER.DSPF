@@ -1,0 +1,579 @@
+     A          R SFL1                      SFL
+     A            QPUI000001     1A  O  2  2
+     A            AANUIT_PA     10A  H
+     A            ACTION        10A  H
+     A            FILIAAL       10A  H
+     A            ID            10A  H
+     A            NAAM_PA       10A  H
+     A            TEXT_PA     1000A  H
+     A            TYPE_PA       10A  H
+     A            WAARDE_PA     10A  H
+     A          R QSFLCTL001                SFLCTL(SFL1)
+     A                                      SFLSIZ(0001)
+     A                                      SFLPAG(0001)
+     A                                      SFLDSP
+     A                                  1  2HTML('QPUISFLSCHERM1')
+     A          R SCHERM1
+     A                                  1  2HTML('QPUICTL1    SFL1      5    RS-
+     A                                      FLDSP    0     RSFLDSPCTL 0     RSF-
+     A                                      LCLR    0    FCLEARGRID RSFLPAG    -
+     A                                      1    C1    8 RSFLSIZ    1    C1    -
+     A                                      9 0    0    ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"scherm1"},"items":[{"id":"Grid1-
+     A                                      ","field type":"grid","css class":"-
+     A                                      volvo-grid","left":"135px","top":"1-
+     A                                      40px","number of rows":"9","number -
+     A                                      of columns":"7","column widths":"86-
+     A                                      ,138,150,162,158,146,191","column h-
+     A                                      eadings":"ID,Filiaal,Naam Parameter-
+     A                                      ,Waarde Parameter,Parameter Aan/Uit-
+     A                                      ,Type Systeem User Brance Set,Besch-
+     A                                      rijving","header height":"57","row -
+     A                                      height":"52","height":"473px","widt-
+     A                                      h":"1032px","record format name":"s-
+     A                                      fl1","context menu id":"menu1","onr-
+     A                                      owclick":"applyProperty(\"menu1\",\-
+     A                                      "user defined data\",row);","clear -
+     A                                      subfile":{"fieldName":"Cleargrid","-
+     A                                      customTrue":"","customFalse":"","da-
+     A                                      taType":"indicator","formatting":"I-
+     A                                      ndicator","indFormat":"true / false-
+     A                                      "},"scrollbar":"sliding","resizable-
+     A                                       columns":"true","header text align-
+     A                                      ":"center,center,center,center,cent-
+     A                                      er,center,center","sortable columns-
+     A                                      ":"true","visibility":"visible"},{"-
+     A                                      id":"panelconstant50","field type":-
+     A                                      "output field","css class":"volvo-l-
+     A                                      abel","value":"NCSD047D","cursor ro-
+     A                                      w":"1","cursor column":"64","left":-
+     A                                      "685px","top":"60px","css class 2":-
+     A                                      "volvo-topline","css class 3":"WHT"-
+     A                                      ,"css class 4":"RI","visibility":"h-
+     A                                      idden"},{"id":"exit1","field type":-
+     A                                      "css button","css class":"volvo-but-
+     A                                      ton","value":"Einde","response":{"f-
+     A                                      ieldName":"exit1","customTrue":"","-
+     A                                      customFalse":"","dataType":"indicat-
+     A                                      or","formatting":"Indicator","indFo-
+     A                                      rmat":"1 / 0"},"theme":"B - Blue","-
+     A                                      icon position":"left","icon":"back"-
+     A                                      ,"small button":"true","shortcut ke-
+     A                                      y":"F3","left":"295px","top":"65px"-
+     A                                      ,"width":"80px"},{"id":"btnAdd","fi-
+     A                                      eld type":"css button","css class":-
+     A                                      "volvo-button","value":"Toevoegen",-
+     A                                      "response":{"fieldName":"btnAdd","c-
+     A                                      ustomTrue":"","customFalse":"","dat-
+     A                                      aType":"indicator","formatting":"In-
+     A                                      dicator","indFormat":"1 / 0"},"them-
+     A                                      e":"B - Blue","icon position":"left-
+     A                                      ","icon":"plus","small button":"tru-
+     A                                      e","shortcut key":"F6","left":"385p-
+     A                                      x","top":"65px","width":"115px"},{"-
+     A                                      id":"title","field type":"output fi-
+     A                                      eld","css class":"outputField","val-
+     A                                      ue":"Onderhoud parameters","left":"-
+     A                                      595px","top":"100px","width":"165px-
+     A                                      ","height":"21px"},{"id":"menu1","f-
+     A                                      ield type":"menu","css class":"volv-
+     A                                      o-context","choices":{"fieldName":"-
+     A                                      choises","dataLength":"100","trimLe-
+     A                                      ading":"false","trimTrailing":"true-
+     A                                      ","blankFill":"false","rjZeroFill":-
+     A                                      "false","dataType":"char","formatti-
+     A                                      ng":"Text","textTransform":"none"},-
+     A                                      "choice values":"view,edit,delete",-
+     A                                      "animate":"false","menu option inde-
+     A                                      nt":"10px","onoptionclick":"var row-
+     A                                      Clicked = this.pui.properties[\"use-
+     A                                      r defined data\"];\npui.set(\"ACTIO-
+     A                                      N.\" + rowClicked, value);\npui.cli-
+     A                                      ck();","left":"185px"')
+     A                                  1  2HTML(',"top":"610px","visibility":"-
+     A                                      hidden"},{"id":"OutputField1","fiel-
+     A                                      d type":"output field","css class":-
+     A                                      "outputField","value":{"fieldName":-
+     A                                      "ID","dataLength":"10","trimLeading-
+     A                                      ":"false","trimTrailing":"true","bl-
+     A                                      ankFill":"false","rjZeroFill":"fals-
+     A                                      e","dataType":"char","formatting":"-
+     A                                      Text","textTransform":"none","desig-
+     A                                      nValue":"[ID]"},"left":"30px","top"-
+     A                                      :"15px","grid":"Grid1","column":"0"-
+     A                                      },{"id":"OutputField2","field type"-
+     A                                      :"output field","css class":"output-
+     A                                      Field","value":{"fieldName":"filiaa-
+     A                                      l","dataLength":"10","trimLeading":-
+     A                                      "false","trimTrailing":"true","blan-
+     A                                      kFill":"false","rjZeroFill":"false"-
+     A                                      ,"dataType":"char","formatting":"Te-
+     A                                      xt","textTransform":"none","designV-
+     A                                      alue":"[filiaal]"},"left":"45px","t-
+     A                                      op":"15px","grid":"Grid1","column":-
+     A                                      "1"},{"id":"OutputField3","field ty-
+     A                                      pe":"output field","css class":"out-
+     A                                      putField","value":{"fieldName":"naa-
+     A                                      m_pa","dataLength":"10","trimLeadin-
+     A                                      g":"false","trimTrailing":"true","b-
+     A                                      lankFill":"false","rjZeroFill":"fal-
+     A                                      se","dataType":"char","formatting":-
+     A                                      "Text","textTransform":"none","desi-
+     A                                      gnValue":"[naam_pa]"},"left":"40px"-
+     A                                      ,"top":"15px","grid":"Grid1","colum-
+     A                                      n":"2"},{"id":"OutputField4","field-
+     A                                       type":"output field","css class":"-
+     A                                      outputField","value":{"fieldName":"-
+     A                                      waarde_pa","dataLength":"10","trimL-
+     A                                      eading":"false","trimTrailing":"tru-
+     A                                      e","blankFill":"false","rjZeroFill"-
+     A                                      :"false","dataType":"char","formatt-
+     A                                      ing":"Text","textTransform":"none",-
+     A                                      "designValue":"[waarde_pa]"},"left"-
+     A                                      :"45px","top":"15px","grid":"Grid1"-
+     A                                      ,"column":"3"},{"id":"OutputField6"-
+     A                                      ,"field type":"output field","css c-
+     A                                      lass":"outputField","value":{"field-
+     A                                      Name":"type_pa","dataLength":"10","-
+     A                                      trimLeading":"false","trimTrailing"-
+     A                                      :"true","blankFill":"false","rjZero-
+     A                                      Fill":"false","dataType":"char","fo-
+     A                                      rmatting":"Text","textTransform":"n-
+     A                                      one","designValue":"[type_pa]"},"le-
+     A                                      ft":"40px","top":"15px","grid":"Gri-
+     A                                      d1","column":"5"},{"id":"OutputFiel-
+     A                                      d7","field type":"output field","cs-
+     A                                      s class":"outputField","value":{"fi-
+     A                                      eldName":"text_pa","dataLength":"10-
+     A                                      00","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[text_pa]"-
+     A                                      },"left":"30px","top":"15px","grid"-
+     A                                      :"Grid1","column":"6"},{"id":"Outpu-
+     A                                      tField5","field type":"output field-
+     A                                      ","css class":"outputField","value"-
+     A                                      :{"fieldName":"aanuit_pa","dataLeng-
+     A                                      th":"10","trimLeading":"false","tri-
+     A                                      mTrailing":"true","blankFill":"fals-
+     A                                      e","rjZeroFill":"false","dataType":-
+     A                                      "char","formatting":"Text","textTra-
+     A                                      nsform":"none","designValue":"[aanu-
+     A                                      it_pa]"},"left":"45px","top":"15px"-
+     A                                      ,"grid":"Grid1","colu')
+     A                                  1  2HTML('mn":"4"},{"id":"ACTION","fiel-
+     A                                      d type":"textbox","css class":"inpu-
+     A                                      t","value":{"fieldName":"ACTION","d-
+     A                                      ataLength":"10","trimLeading":"fals-
+     A                                      e","trimTrailing":"true","blankFill-
+     A                                      ":"false","rjZeroFill":"false","dat-
+     A                                      aType":"char","formatting":"Text","-
+     A                                      textTransform":"none","designValue"-
+     A                                      :"[ACTION]"},"left":"0px","top":"20-
+     A                                      px","width":"80px","visibility":"hi-
+     A                                      dden","height":"20px","grid":"Grid1-
+     A                                      ","column":"0"}]}')
+     A            BTNADD         1A  H
+     A            CHOISES      100A  H
+     A            CLEARGRID      1A  H
+     A            EXIT1          1A  H
+     A          R SCHERM2B
+     A                                  1  2HTML('QPUIREC0    ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"scherm2b"},"items":[{"id":"Pane-
+     A                                      l","field type":"css panel","has he-
+     A                                      ader":"false","body theme":"C - Gra-
+     A                                      y","left":"40px","top":"40px","heig-
+     A                                      ht":"400px","width":"600px","z inde-
+     A                                      x":"8","locked in place":"true"},{"-
+     A                                      id":"title","field type":"output fi-
+     A                                      eld","css class":"volvo-title","val-
+     A                                      ue":"Parameter - bekijken","font si-
+     A                                      ze":"18px","text align":"left","lef-
+     A                                      t":"55px","top":"60px"},{"id":"PAKE-
+     A                                      Y","field type":"output field","css-
+     A                                       class":"volvo-output","left":"250p-
+     A                                      x","top":"105px","value":{"fieldNam-
+     A                                      e":"ID","dataLength":"10","trimLead-
+     A                                      ing":"false","trimTrailing":"true",-
+     A                                      "blankFill":"false","rjZeroFill":"f-
+     A                                      alse","dataType":"char","formatting-
+     A                                      ":"Text","textTransform":"none","de-
+     A                                      signValue":"[ID]"}},{"id":"PAFILN",-
+     A                                      "field type":"output field","css cl-
+     A                                      ass":"volvo-output","left":"250px",-
+     A                                      "top":"140px","value":{"fieldName":-
+     A                                      "filiaal","dataLength":"10","trimLe-
+     A                                      ading":"false","trimTrailing":"true-
+     A                                      ","blankFill":"false","rjZeroFill":-
+     A                                      "false","dataType":"char","formatti-
+     A                                      ng":"Text","textTransform":"none","-
+     A                                      designValue":"[filiaal]"}},{"id":"P-
+     A                                      ANAME","field type":"output field",-
+     A                                      "css class":"volvo-output","left":"-
+     A                                      250px","top":"180px","value":{"fiel-
+     A                                      dName":"naam_pa","dataLength":"10",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","designValue":"[naam_pa]"}},{-
+     A                                      "id":"PAVALUE","field type":"output-
+     A                                       field","css class":"volvo-output",-
+     A                                      "left":"250px","top":"225px","value-
+     A                                      ":{"fieldName":"waarde_pa","dataLen-
+     A                                      gth":"10","trimLeading":"false","tr-
+     A                                      imTrailing":"true","blankFill":"fal-
+     A                                      se","rjZeroFill":"false","dataType"-
+     A                                      :"char","formatting":"Text","textTr-
+     A                                      ansform":"none","designValue":"[waa-
+     A                                      rde_pa]"}},{"id":"PATYPE","field ty-
+     A                                      pe":"output field","css class":"vol-
+     A                                      vo-output","left":"250px","top":"30-
+     A                                      5px","value":{"fieldName":"type_pa"-
+     A                                      ,"dataLength":"10","trimLeading":"f-
+     A                                      alse","trimTrailing":"true","blankF-
+     A                                      ill":"false","rjZeroFill":"false","-
+     A                                      dataType":"char","formatting":"Text-
+     A                                      ","textTransform":"none","designVal-
+     A                                      ue":"[type_pa]"}},{"id":"PAONOFF","-
+     A                                      field type":"checkbox","left":"250p-
+     A                                      x","top":"265px","label":"Aan/Uit",-
+     A                                      "css class":"volvo-checkbox","value-
+     A                                      ":"aanuit_pa","disabled":"true"},{"-
+     A                                      id":"PAINFO","field type":"output f-
+     A                                      ield","css class":"volvo-output","l-
+     A                                      eft":"250px","top":"345px","value":-
+     A                                      {"fieldName":"text_pa","dataLength"-
+     A                                      :"1000","trimLeading":"false","trim-
+     A                                      Trailing":"true","blankFill":"false-
+     A                                      ","rjZeroFill":"false","dataType":"-
+     A                                      char","formatting":"Text","textTran-
+     A                                      sform":"none","designValue":"[text_-
+     A                                      pa]"}},{"id":"RLCUCA_')
+     A                                  1  2HTML('Label","field type":"output f-
+     A                                      ield","css class":"volvo-label","va-
+     A                                      lue":"Naam Parameter","left":"55px"-
+     A                                      ,"top":"180px","width":"175px","hei-
+     A                                      ght":"15px"},{"id":"RLCUCA_Label_co-
+     A                                      py","field type":"output field","cs-
+     A                                      s class":"volvo-label","value":"Fil-
+     A                                      iaal","text align":"right","left":"-
+     A                                      55px","top":"145px","width":"175px"-
+     A                                      ,"height":"15px"},{"id":"RLCUCA_Lab-
+     A                                      el_copy2","field type":"output fiel-
+     A                                      d","css class":"volvo-label","value-
+     A                                      ":"ID","text align":"right","left":-
+     A                                      "55px","top":"105px","width":"175px-
+     A                                      ","height":"15px"},{"id":"RLCUCA_La-
+     A                                      bel_copy3","field type":"output fie-
+     A                                      ld","css class":"volvo-label","valu-
+     A                                      e":"Parameter Aan/Uit","text align"-
+     A                                      :"right","left":"55px","top":"265px-
+     A                                      ","width":"180px"},{"id":"RLCUCA_La-
+     A                                      bel_copy4","field type":"output fie-
+     A                                      ld","css class":"volvo-label","valu-
+     A                                      e":"type systeem user brance set ",-
+     A                                      "text align":"right","left":"55px",-
+     A                                      "top":"305px","width":"180px"},{"id-
+     A                                      ":"RLCUCA_Label_copy5","field type"-
+     A                                      :"output field","css class":"volvo--
+     A                                      label","value":"Waarde parameter","-
+     A                                      text align":"right","left":"55px","-
+     A                                      top":"225px","width":"175px"},{"id"-
+     A                                      :"RLCUCA_Label_copy6","field type":-
+     A                                      "output field","css class":"volvo-l-
+     A                                      abel","value":"Beschrijving","text -
+     A                                      align":"right","left":"55px","top":-
+     A                                      "345px","width":"180px"},{"id":"btn-
+     A                                      Back","field type":"css button","cs-
+     A                                      s class":"volvo-button","value":"Te-
+     A                                      rug","response":{"fieldName":"btnBa-
+     A                                      ck","customTrue":"","customFalse":"-
+     A                                      ","dataType":"indicator","formattin-
+     A                                      g":"Indicator","indFormat":"1 / 0"}-
+     A                                      ,"theme":"B - Blue","icon position"-
+     A                                      :"left","icon":"left arrow","small -
+     A                                      button":"true","shortcut key":"F12"-
+     A                                      ,"left":"280px","top":"455px","widt-
+     A                                      h":"85px"}]}')
+     A            BTNBACK        1A  H
+     A            FILIAAL       10A  H
+     A            ID            10A  H
+     A            NAAM_PA       10A  H
+     A            TEXT_PA     1000A  H
+     A            TYPE_PA       10A  H
+     A            WAARDE_PA     10A  H
+     A          R SCHERM2W
+     A                                  1  2HTML('QPUIREC0    ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"scherm2w"},"items":[{"id":"Pane-
+     A                                      l","field type":"css panel","has he-
+     A                                      ader":"false","body theme":"C - Gra-
+     A                                      y","left":"70px","top":"70px","heig-
+     A                                      ht":"400px","width":"600px","z inde-
+     A                                      x":"8","locked in place":"true"},{"-
+     A                                      id":"title","field type":"output fi-
+     A                                      eld","css class":"volvo-title","val-
+     A                                      ue":"Parameter - wijzigen","font si-
+     A                                      ze":"18px","text align":"left","lef-
+     A                                      t":"85px","top":"90px"},{"id":"PAKE-
+     A                                      Y","field type":"output field","css-
+     A                                       class":"volvo-output","left":"280p-
+     A                                      x","top":"135px","value":{"fieldNam-
+     A                                      e":"ID","dataLength":"10","trimLead-
+     A                                      ing":"false","trimTrailing":"true",-
+     A                                      "blankFill":"false","rjZeroFill":"f-
+     A                                      alse","dataType":"char","formatting-
+     A                                      ":"Text","textTransform":"none","de-
+     A                                      signValue":"[ID]"}},{"id":"PAFILN",-
+     A                                      "field type":"output field","css cl-
+     A                                      ass":"volvo-output","left":"280px",-
+     A                                      "top":"175px","value":{"fieldName":-
+     A                                      "filiaal","dataLength":"10","trimLe-
+     A                                      ading":"false","trimTrailing":"true-
+     A                                      ","blankFill":"false","rjZeroFill":-
+     A                                      "false","dataType":"char","formatti-
+     A                                      ng":"Text","textTransform":"none","-
+     A                                      designValue":"[filiaal]"}},{"id":"P-
+     A                                      ANAME","field type":"output field",-
+     A                                      "css class":"volvo-output","left":"-
+     A                                      280px","top":"215px","value":{"fiel-
+     A                                      dName":"naam_pa","dataLength":"10",-
+     A                                      "trimLeading":"false","trimTrailing-
+     A                                      ":"true","blankFill":"false","rjZer-
+     A                                      oFill":"false","dataType":"char","f-
+     A                                      ormatting":"Text","textTransform":"-
+     A                                      none","designValue":"[naam_pa]"}},{-
+     A                                      "id":"PAVALUE","field type":"textbo-
+     A                                      x","css class":"volvo-input","left"-
+     A                                      :"280px","top":"255px","value":{"fi-
+     A                                      eldName":"waarde_pa","dataLength":"-
+     A                                      10","trimLeading":"false","trimTrai-
+     A                                      ling":"true","blankFill":"false","r-
+     A                                      jZeroFill":"false","dataType":"char-
+     A                                      ","formatting":"Text","textTransfor-
+     A                                      m":"none","designValue":"[waarde_pa-
+     A                                      ]"}},{"id":"PATYPE","field type":"t-
+     A                                      extbox","css class":"volvo-input","-
+     A                                      left":"280px","top":"335px","value"-
+     A                                      :{"fieldName":"type_pa","dataLength-
+     A                                      ":"10","trimLeading":"false","trimT-
+     A                                      railing":"true","blankFill":"false"-
+     A                                      ,"rjZeroFill":"false","dataType":"c-
+     A                                      har","formatting":"Text","textTrans-
+     A                                      form":"none","designValue":"[type_p-
+     A                                      a]"}},{"id":"PAONOFF","field type":-
+     A                                      "checkbox","label":"Aan/Uit","left"-
+     A                                      :"280px","top":"295px","css class":-
+     A                                      "volvo-checkbox","value":{"fieldNam-
+     A                                      e":"aanuit_pa","dataLength":"10","t-
+     A                                      rimLeading":"false","trimTrailing":-
+     A                                      "true","blankFill":"false","rjZeroF-
+     A                                      ill":"false","dataType":"char","for-
+     A                                      matting":"Text","textTransform":"no-
+     A                                      ne","designValue":"[aanuit_pa]"}},{-
+     A                                      "id":"PAINFO","field type":"textbox-
+     A                                      ","css class":"volvo-input","left":-
+     A                                      "280px","top":"375px","value":{"fie-
+     A                                      ldName":"text_pa","dataLength":"100-
+     A                                      0","trimLeading":"fal')
+     A                                  1  2HTML('se","trimTrailing":"true","bl-
+     A                                      ankFill":"false","rjZeroFill":"fals-
+     A                                      e","dataType":"char","formatting":"-
+     A                                      Text","textTransform":"none","desig-
+     A                                      nValue":"[text_pa]"}},{"id":"RLCUCA-
+     A                                      _Label","field type":"output field"-
+     A                                      ,"css class":"volvo-label","value":-
+     A                                      "Naam Parameter","left":"85px","top-
+     A                                      ":"210px","height":"15px","width":"-
+     A                                      175px"},{"id":"RLCUCA_Label_copy","-
+     A                                      field type":"output field","css cla-
+     A                                      ss":"volvo-label","value":"Filiaal"-
+     A                                      ,"text align":"right","left":"85px"-
+     A                                      ,"top":"175px","height":"15px","wid-
+     A                                      th":"175px"},{"id":"RLCUCA_Label_co-
+     A                                      py2","field type":"output field","c-
+     A                                      ss class":"volvo-label","value":"ID-
+     A                                      ","text align":"right","left":"85px-
+     A                                      ","top":"135px","height":"15px","wi-
+     A                                      dth":"175px"},{"id":"RLCUCA_Label_c-
+     A                                      opy3","field type":"output field","-
+     A                                      css class":"volvo-label","value":"P-
+     A                                      arameter Aan/Uit","text align":"rig-
+     A                                      ht","left":"85px","top":"295px","wi-
+     A                                      dth":"180px"},{"id":"RLCUCA_Label_c-
+     A                                      opy4","field type":"output field","-
+     A                                      css class":"volvo-label","value":"t-
+     A                                      ype systeem user brance set ","text-
+     A                                       align":"right","left":"85px","top"-
+     A                                      :"335px","width":"180px"},{"id":"RL-
+     A                                      CUCA_Label_copy5","field type":"out-
+     A                                      put field","css class":"volvo-label-
+     A                                      ","value":"Waarde parameter","text -
+     A                                      align":"right","left":"85px","top":-
+     A                                      "255px","width":"175px"},{"id":"RLC-
+     A                                      UCA_Label_copy6","field type":"outp-
+     A                                      ut field","css class":"volvo-label"-
+     A                                      ,"value":"Beschrijving","text align-
+     A                                      ":"right","left":"85px","top":"375p-
+     A                                      x","width":"180px"},{"id":"btnSave"-
+     A                                      ,"field type":"css button","css cla-
+     A                                      ss":"volvo-button","value":"Opslaan-
+     A                                      ","response":{"fieldName":"btnSave"-
+     A                                      ,"customTrue":"","customFalse":"","-
+     A                                      dataType":"indicator","formatting":-
+     A                                      "Indicator","indFormat":"1 / 0"},"t-
+     A                                      heme":"B - Blue","icon position":"l-
+     A                                      eft","icon":"check","small button":-
+     A                                      "true","shortcut key":"Enter","left-
+     A                                      ":"250px","top":"495px","width":"95-
+     A                                      px"},{"id":"btnBackW","field type":-
+     A                                      "css button","css class":"volvo-but-
+     A                                      ton","value":"Afbreken","response":-
+     A                                      {"fieldName":"btnBackW","customTrue-
+     A                                      ":"","customFalse":"","dataType":"i-
+     A                                      ndicator","formatting":"Indicator",-
+     A                                      "indFormat":"1 / 0"},"theme":"G - R-
+     A                                      ed","icon position":"left","icon":"-
+     A                                      back","small button":"true","shortc-
+     A                                      ut key":"F12","left":"350px","top":-
+     A                                      "495px","width":"100px"}]}')
+     A            AANUIT_PA     10A  H
+     A            BTNBACKW       1A  H
+     A            BTNSAVE        1A  H
+     A            FILIAAL       10A  H
+     A            ID            10A  H
+     A            NAAM_PA       10A  H
+     A            TEXT_PA     1000A  H
+     A            TYPE_PA       10A  H
+     A            WAARDE_PA     10A  H
+     A          R SCHERM2V
+     A                                  1  2HTML('QPUIREC1    RWINDOW    0     -
+     A                                      ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"scherm2v","show as window":"tru-
+     A                                      e"},"items":[{"id":"scherm2v","fiel-
+     A                                      d type":"css panel","value":"verwij-
+     A                                      deren record","left":"385px","top":-
+     A                                      "340px","width":"345px","height":"2-
+     A                                      55px","z index":"8","header theme":-
+     A                                      "C - Gray","body theme":"C - Gray"}-
+     A                                      ,{"id":"HtmlContainer1","field type-
+     A                                      ":"html container","left":"490px","-
+     A                                      top":"415px","html":"Doorgaan?","wi-
+     A                                      dth":"125px","height":"40px","font -
+     A                                      size":"25px"},{"id":"btnBackV","fie-
+     A                                      ld type":"image","response":{"field-
+     A                                      Name":"btnBackV","customTrue":"","c-
+     A                                      ustomFalse":"","dataType":"indicato-
+     A                                      r","formatting":"Indicator","indFor-
+     A                                      mat":"1 / 0"},"image source":"/volv-
+     A                                      o/terug_tekst.png","left":"595px","-
+     A                                      top":"490px","height":"60px","width-
+     A                                      ":"60px"},{"id":"btnDelete","field -
+     A                                      type":"image","response":{"fieldNam-
+     A                                      e":"btnDelete","customTrue":"","cus-
+     A                                      tomFalse":"","dataType":"indicator"-
+     A                                      ,"formatting":"Indicator","indForma-
+     A                                      t":"1 / 0"},"image source":"/volvo/-
+     A                                      akkoord_grijs.png","left":"460px","-
+     A                                      top":"495px","height":"60px","width-
+     A                                      ":"60px"}]}')
+     A            BTNBACKV       1A  H
+     A            BTNDELETE      1A  H
+     A          R SCHERM2T
+     A                                  1  2HTML('QPUIREC0    ')
+     A                                  1  2HTML('{"screen":{"record format nam-
+     A                                      e":"scherm2T"},"items":[{"id":"Pane-
+     A                                      l","field type":"css panel","has he-
+     A                                      ader":"false","body theme":"C - Gra-
+     A                                      y","left":"100px","top":"100px","he-
+     A                                      ight":"400px","width":"600px","z in-
+     A                                      dex":"8","locked in place":"true"},-
+     A                                      {"id":"title","field type":"output -
+     A                                      field","css class":"volvo-title","v-
+     A                                      alue":"Parameter - toevoegen","font-
+     A                                       size":"18px","text align":"left","-
+     A                                      left":"115px","top":"120px"},{"id":-
+     A                                      "PAKEY","field type":"textbox","css-
+     A                                       class":"volvo-input","left":"310px-
+     A                                      ","top":"165px"},{"id":"PAFILN","fi-
+     A                                      eld type":"textbox","css class":"vo-
+     A                                      lvo-input","left":"310px","top":"20-
+     A                                      5px"},{"id":"PANAME","field type":"-
+     A                                      textbox","css class":"volvo-input",-
+     A                                      "left":"310px","top":"245px"},{"id"-
+     A                                      :"PAVALUE","field type":"textbox","-
+     A                                      css class":"volvo-input","left":"31-
+     A                                      0px","top":"285px"},{"id":"PATYPE",-
+     A                                      "field type":"textbox","css class":-
+     A                                      "volvo-input","left":"310px","top":-
+     A                                      "365px"},{"id":"PAONOFF","field typ-
+     A                                      e":"checkbox","css class":"volvo-ch-
+     A                                      eckbox","label":"Aan/Uit","left":"3-
+     A                                      10px","top":"325px"},{"id":"PAINFO"-
+     A                                      ,"field type":"textbox","css class"-
+     A                                      :"volvo-input","left":"310px","top"-
+     A                                      :"405px"},{"id":"RLCUCA_Label","fie-
+     A                                      ld type":"output field","css class"-
+     A                                      :"volvo-label","value":"Naam Parame-
+     A                                      ter","left":"115px","top":"240px","-
+     A                                      height":"15px","width":"175px"},{"i-
+     A                                      d":"RLCUCA_Label_copy","field type"-
+     A                                      :"output field","css class":"volvo--
+     A                                      label","value":"Filiaal","text alig-
+     A                                      n":"right","left":"115px","top":"20-
+     A                                      5px","height":"15px","width":"175px-
+     A                                      "},{"id":"RLCUCA_Label_copy2","fiel-
+     A                                      d type":"output field","css class":-
+     A                                      "volvo-label","value":"ID","text al-
+     A                                      ign":"right","left":"115px","top":"-
+     A                                      165px","height":"15px","width":"175-
+     A                                      px"},{"id":"RLCUCA_Label_copy3","fi-
+     A                                      eld type":"output field","css class-
+     A                                      ":"volvo-label","value":"Parameter -
+     A                                      Aan/Uit","text align":"right","left-
+     A                                      ":"115px","top":"325px","width":"18-
+     A                                      0px"},{"id":"RLCUCA_Label_copy4","f-
+     A                                      ield type":"output field","css clas-
+     A                                      s":"volvo-label","value":"type syst-
+     A                                      eem user brance set ","text align":-
+     A                                      "right","left":"115px","top":"365px-
+     A                                      ","width":"180px"},{"id":"RLCUCA_La-
+     A                                      bel_copy5","field type":"output fie-
+     A                                      ld","css class":"volvo-label","valu-
+     A                                      e":"Waarde parameter","text align":-
+     A                                      "right","left":"115px","top":"285px-
+     A                                      ","width":"175px"},{"id":"RLCUCA_La-
+     A                                      bel_copy6","field type":"output fie-
+     A                                      ld","css class":"volvo-label","valu-
+     A                                      e":"Beschrijving","text align":"rig-
+     A                                      ht","left":"115px","top":"405px","w-
+     A                                      idth":"180px"},{"id":"btnSave","fie-
+     A                                      ld type":"css button","css class":"-
+     A                                      volvo-button","value":"Opslaan","re-
+     A                                      sponse":{"fieldName":"btnSave","cus-
+     A                                      tomTrue":"","customFalse":"","dataT-
+     A                                      ype":"indicator","for')
+     A                                  1  2HTML('matting":"Indicator","indForm-
+     A                                      at":"1 / 0"},"theme":"B - Blue","ic-
+     A                                      on position":"left","icon":"check",-
+     A                                      "small button":"true","shortcut key-
+     A                                      ":"Enter","left":"285px","top":"520-
+     A                                      px","width":"95px"},{"id":"btnCance-
+     A                                      l","field type":"css button","css c-
+     A                                      lass":"volvo-button","value":"Afbre-
+     A                                      ken","response":{"fieldName":"btnCa-
+     A                                      ncel","customTrue":"","customFalse"-
+     A                                      :"","dataType":"indicator","formatt-
+     A                                      ing":"Indicator","indFormat":"1 / 0-
+     A                                      "},"theme":"G - Red","icon position-
+     A                                      ":"left","icon":"back","small butto-
+     A                                      n":"true","shortcut key":"F12","lef-
+     A                                      t":"380px","top":"525px","width":"1-
+     A                                      00px"}]}')
+     A            BTNCANCEL      1A  H
+     A            BTNSAVE        1A  H
