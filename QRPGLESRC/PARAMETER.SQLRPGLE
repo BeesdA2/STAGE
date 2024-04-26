@@ -38,6 +38,11 @@ Dow exit1 = *OFF;
 
   ENDIF;
 
+    if btnAdd = *on;
+      toevoegen2();
+    endif;
+            
+
 Enddo;
 *inlr = *on;
 
@@ -80,12 +85,6 @@ dcl-proc filgrid;
 
 end-proc;
 
-//// hAMSTER 
-dcl-proc hamster;
-
-end-proc;
-
-//helloo
 
 /// context menu opties
 
@@ -149,6 +148,24 @@ dou btnBackW = *on or btnSave = *on;
 ENDDO;
 
 END-PROC;
+
+//// scherm bekijken 
+
+  dcl-proc toevoegen2;
+    btnBackT = *off and btnSaveT = *off;
+     dou btnBackT = *on or btnSaveT = *on;
+       exfmt scherm2T;
+       if btnSaveT = *on;
+         exec SQL INSERT INTO IDASPARF (PAKEY, PAFILN, PANAME, PAVALUE, PAONOFF, PATYPE, PAINFO)
+         values(:ID, :filiaal, :naam_pa, :waarde_pa, :aanuit_pa, :type_pa, :text_pa);
+          inzgrid();
+          filgrid();
+
+      ENDIF;
+
+     ENDDO;
+
+  END-PROC;        
 
 
 //////
