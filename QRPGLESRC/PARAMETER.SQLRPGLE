@@ -149,23 +149,40 @@ ENDDO;
 
 END-PROC;
 
-//// scherm bekijken 
+//// scherm toevoegen 
 
   dcl-proc toevoegen2;
-    btnBackT = *off and btnSaveT = *off;
-     dou btnBackT = *on or btnSaveT = *on;
-       exfmt scherm2T;
-       if btnSaveT = *on;
-         exec SQL INSERT INTO IDASPARF (PAKEY, PAFILN, PANAME, PAVALUE, PAONOFF, PATYPE, PAINFO)
-         values(:ID, :filiaal, :naam_pa, :waarde_pa, :aanuit_pa, :type_pa, :text_pa);
-          inzgrid();
-          filgrid();
+     dcl-s NEWID char(10);
+     dcl-s RIJCOUNT int(10);
 
-      ENDIF;
+  btnBackT = *off and btnSaveT = *off;
+  dou btnBackT = *on or btnSaveT = *on;
+    exfmt scherm2T;
+    if btnSaveT = *on;
 
-     ENDDO;
+      NEWID = ID;
 
-  END-PROC;        
+      exec sql
+        SELECT COUNT(*)
+        INTO :RIJCOUNT
+        FROM IDASPARF
+        WHERE PAKEY = :NEWID;
+
+      if (RIJCOUNT > 0);
+        dou btnBackID = *on;
+         exfmt message_ID;
+         enddo;
+      else;
+        exec sql
+          INSERT INTO IDASPARF (PAKEY, PAFILN, PANAME, PAVALUE, PAONOFF, PATYPE, PAINFO)
+          VALUES (:ID, :filiaal, :naam_pa, :waarde_pa, :aanuit_pa, :type_pa, :text_pa);
+        inzgrid();
+        filgrid();
+      endif;
+    ENDIF;
+  ENDDO;
+END-PROC;
+              
 
 
 //////
