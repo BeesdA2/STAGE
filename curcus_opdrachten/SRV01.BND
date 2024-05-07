@@ -1,0 +1,4 @@
+             strpgmexp  *current
+                export     (srv01_berekenBedragBtw)
+
+             endpgmexp 
