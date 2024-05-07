@@ -1,0 +1,15 @@
+             PGM
+
+
+
+               /* parameters */
+             DCL        VAR(&BEDRAGEX) TYPE(*DEC) LEN(15 2) VALUE(100)
+             DCL        VAR(&BTW) TYPE(*DEC) LEN(3) VALUE(21)
+             DCL        VAR(&BEDRAGINCL) TYPE(*DEC) LEN(15 2)
+
+
+             CALL       PGM(EXERC06) PARM((&BEDRAGEX) (&BTW) (&BEDRAGINCL))
+
+             SNDPGMMSG  MSG(%CHAR(&BEDRAGINCL)) MSGTYPE(*INFO)
+
+             ENDPGM 
